@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
         //ratioDamage = ratio;
         float hollowY = GameManager.manager.hollowPrefabio.transform.localScale.y;
         hollowScale = new Vector3(ratio, hollowY, ratio);
+
     }
 
     void Update()

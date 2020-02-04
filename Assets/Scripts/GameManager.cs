@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager manager;
 
-    public GameObject hollowPrefabio;
-    public GameObject personalCamera;
+    public GameObject hollowPrefabio, field;
+    public GameObject personalCamera; 
 
 
     private void Awake()

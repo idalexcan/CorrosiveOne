@@ -29,7 +29,8 @@ public class Turret : MonoBehaviour
         GameObject drop = Instantiate(bullet);
         drop.transform.position = cannonHead.transform.GetChild(0).transform.position;
         drop.transform.eulerAngles = cannonHead.transform.eulerAngles;
-        drop.GetComponent<Rigidbody>().AddForce(drop.transform.forward * 160);
         drop.AddComponent<Bullet>().Builder(bullet.transform.localScale.magnitude);
+        drop.GetComponent<Rigidbody>().AddForce(drop.transform.forward * 100);
+        
     }
 }
